@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "rootDirs": [
+      "src", ".storybook"],
+    "outDir": "build",
+    "module": "esnext",
+    "moduleResolution": "Bundler",
+    "target": "ES2020",
+    "lib": ["ES2020", "dom"],
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "types": ["vitest/globals", "@testing-library/jest-dom"]
+  },
+  "include": ["src/**/*", ".storybook/**/*",
+    "rsbuild.config.ts"
+  ],
+  "exclude": ["*/__generated__/**/*"]
+}
